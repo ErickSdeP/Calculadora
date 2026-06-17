@@ -1,3 +1,4 @@
+console.log("Hello World")
 const display = document.getElementById("display"); //Adicionando o #display
 const botoes = document.querySelectorAll("button"); //Selecionando todos os butões
 botoes.forEach((botao) => {                         //Passa por cada item da lista...
