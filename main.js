@@ -5,9 +5,7 @@ botoes.forEach((botao) => {
     const valor = botao.textContent;
     if (valor === "C") {
       display.value = "";
-    } 
-    
-    else if (valor === "=") {
+    } else if (valor === "=") {
       try {
         display.value = eval(display.value);
       } catch {
