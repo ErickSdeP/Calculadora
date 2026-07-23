@@ -8,7 +8,8 @@ botoes.forEach((botao) => {                         //Passa por cada item da lis
       display.value = "";
     } else if (valor === "=") {
       try {                                         //Tente executar esse código
-        display.value = eval(display.value);            //Calcula o valor no display
+        const resultado = eval(display.value);
+        display.value = Number(resultado.toFixed(10));            //Calcula o valor no display
       } catch {                                     //Caso não consiga executar
         display.value = "Erro";
       }
